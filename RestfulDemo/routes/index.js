@@ -45,6 +45,7 @@ router.get('/:collection', function(req, res, next){
   });
 });
 
+// 根据collection名字查找对应内容
 router.get('/:collection/:entity', function(req, res, next) { //I
    var params = req.params;
    var entity = params.entity;
@@ -57,6 +58,17 @@ router.get('/:collection/:entity', function(req, res, next) { //I
    } else {
       res.send(400, {error: 'bad url', url: req.url});
    }
+});
+
+// Post record to db
+router.post('/:collection', function(req, res) { //A
+  var object = req.body;
+  console.log(req.body);
+  var collection = req.params.collection;
+  collectionDriver.save(collection, object, function(err,docs) {
+    if (err) { res.send(400, err); } 
+    else { res.send(201, docs); } //B
+  });
 });
 
 module.exports = router;
