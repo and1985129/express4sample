@@ -92,7 +92,7 @@ router.put('/:collection/:entity', function(req, res){
 });
 
 // Delete object
-app.delete('/:collection/:entity', function(req, res) { //A
+router.delete('/:collection/:entity', function(req, res) { //A
     var params = req.params;
     var entity = params.entity;
     var collection = params.collection;
