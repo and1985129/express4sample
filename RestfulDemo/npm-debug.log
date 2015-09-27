@@ -1,29 +1,35 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
-1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
-2 info using npm@1.4.14
-3 info using node@v0.10.29
-4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart RestfulDemo@0.0.0
-7 info start RestfulDemo@0.0.0
-8 verbose unsafe-perm in lifecycle true
-9 info RestfulDemo@0.0.0 Failed to exec start script
-10 error RestfulDemo@0.0.0 start: `node ./bin/www`
-10 error Exit status 8
-11 error Failed at the RestfulDemo@0.0.0 start script.
-11 error This is most likely a problem with the RestfulDemo package,
-11 error not with npm itself.
-11 error Tell the author that this fails on your system:
-11 error     node ./bin/www
-11 error You can get their info via:
-11 error     npm owner ls RestfulDemo
-11 error There is likely additional logging output above.
-12 error System Windows_NT 6.2.9200
-13 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-14 error cwd C:\Users\i006873\Desktop\JS\NodeJS\RestfulDemo
-15 error node -v v0.10.29
-16 error npm -v 1.4.14
-17 error code ELIFECYCLE
-18 verbose exit [ 1, true ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart RestfulDemo@0.0.0
+6 info start RestfulDemo@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info RestfulDemo@0.0.0 Failed to exec start script
+9 verbose stack Error: RestfulDemo@0.0.0 start: `node ./bin/www`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+9 verbose stack     at EventEmitter.emit (events.js:110:17)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1015:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+10 verbose pkgid RestfulDemo@0.0.0
+11 verbose cwd /Users/and/Documents/Github/express4sample/RestfulDemo
+12 error Darwin 14.5.0
+13 error argv "node" "/usr/local/bin/npm" "start"
+14 error node v0.12.5
+15 error npm  v2.11.2
+16 error code ELIFECYCLE
+17 error RestfulDemo@0.0.0 start: `node ./bin/www`
+17 error Exit status 1
+18 error Failed at the RestfulDemo@0.0.0 start script 'node ./bin/www'.
+18 error This is most likely a problem with the RestfulDemo package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node ./bin/www
+18 error You can get their info via:
+18 error     npm owner ls RestfulDemo
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
